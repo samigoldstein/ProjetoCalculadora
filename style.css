@@ -1,0 +1,44 @@
+/*Remove as margens e espaçamentos padrão de todos os elementos. "*" aplica a a tudo*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    background-image: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);/*Cria o gradiente de cores de fundo*/
+    height: 100vh;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.corpoCalc{
+    margin-top: 2%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);/*a: transparência de 0 a 1*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*Ajusta a posição para que fique perfeitamente posicionada no centro da tela*/
+}
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;/*Altera o cursor (seta) para pointer (mãozinha) indicando que o elemento é clicável*/
+    margin: 3px;
+    background-color: rgb(31, 31,31);
+    border: none;
+    color: white;
+}
+.botao:hover{
+    background-color: black;
+}
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

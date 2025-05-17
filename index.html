@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/JavaScript" defer></script>
+</head>
+
+<body>
+    <div class="fundo">
+        <h1>Calculadora</h1>
+        <div class="corpoCalc">
+            <p id="resultado"></p>
+            <!-- Tabela para números e operações -->
+             <h1>Calculadora</h1>
+            <table>
+                
+                <!-- Linha1 -->
+                <tr>
+                    <!-- Botão "C" chama a função para limpar a tela da calculadora -->
+                    <td><button class="botao" onclick="clean()"> C </button></td><!--Onclick é para o clique-->
+                    <!-- Botão de voltar "<" chama a função para apagar o último dígito-->
+                    <td><button class="botao" onclick="del()"> < </button></td>
+                    <!-- Botão divisão "/"  insere o caractere "/" chamando a função -->
+                    <td><button class="botao" onclick="insert('/')"> / </button></td>
+                    <!-- Botão multiplicação "*"  insere o caractere "*" chamando a função -->
+                    <td><button class="botao" onclick="insert('*')"> * </button></td>
+                </tr> <!-- Final da linha 1 -->
+
+                <!-- Linha 2 -->
+                <tr>
+                    <!-- Botão "7" que insere o número 7 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('7')"> 7 </button></td><!--Onclick é para o clique-->
+                    <!-- Botão "8" que insere o número 8 na tela da calculadora-->
+                    <td><button class="botao" onclick="insert('8')"> 8 </button></td>
+                    <!-- Botão "9" que insere o número 9 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('9')"> 9 </button></td>
+                    <!-- Botão subtração "-"  insere o caractere "-" chamando a função -->
+                    <td><button class="botao" onclick="insert('-')"> - </button></td>
+                </tr> <!-- Final da linha 2 -->
+
+                <!-- Linha 3 -->
+                <tr>
+                    <!-- Botão "4" que insere o número 4 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('4')"> 4 </button></td><!--Onclick é para o clique-->
+                    <!-- Botão "5" que insere o número 5 na tela da calculadora-->
+                    <td><button class="botao" onclick="insert('5')"> 5 </button></td>
+                    <!-- Botão "6" que insere o número 6 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('6')"> 6 </button></td>
+                    <!-- Botão soma "+"  insere o caractere "+" chamando a função -->
+                    <td><button class="botao" onclick="insert('+')"> + </button></td>
+                </tr> <!-- Final da linha 3 -->
+
+                <!-- Linha 4 -->
+                <tr>
+                    <!-- Botão "1" que insere o número 1 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('1')"> 1 </button></td><!--Onclick é para o clique-->
+                    <!-- Botão "2" que insere o número 2 na tela da calculadora-->
+                    <td><button class="botao" onclick="insert('2')"> 2 </button></td>
+                    <!-- Botão "3" que insere o número 3 na tela da calculadora -->
+                    <td><button class="botao" onclick="insert('3')"> 3 </button></td>
+                    <!-- Botão igual "="  insere o caractere "=" chamando a função calcular -->
+                    <td rowspan="2"><button class="botao" style="height: 50px;" onclick="calcular()"> = </button></td>
+                </tr> <!-- Final da linha 4-->
+
+                <!-- Linha 5 -->
+                <tr>
+                    <!-- Botão "0" que insere o número 0 na tela da calculadora -->
+                    <td colspan="2"><button class="botao" style="width: 100%;" onclick="insert('0')"> 0 </button></td>
+                    <!--Onclick é para o clique-->
+                    <!-- Botão "." que insere o ponto como separador decimal na tela da calculadora-->
+                    <td><button class="botao" onclick=""> . </button></td>
+                </tr> <!-- Final da linha 5-->
+
+
+            </table>
+
+
+        </div>
+    </div><!-- Fim da div corpoCalc -->
+</body>
+
+</html>
